@@ -89,21 +89,40 @@
   </header>
 
   <div id="main">
+    <!--
+    Article = contenu indépendant
+      - Article, Test, Fiche de film / jeu, Profil de membre
+    -->
     <article>
       <header>
-        <h1>Titre de la page</h1>
+        <h1>{Titre de la page}</h1><!-- Sauf page d'accueil -->
       </header>
 
+      <!--
+      Informations complémentaires à l'article
+        - Informations sur l'auteur, Date de publication
+      -->
       <footer></footer>
 
+      <!--
+      Informations liées à l'article, sans être nécessaires à sa compréhension
+        - Définition d'un terme, Biographie d'un auteur, Glossaire, Sources, Articles en relation
+      -->
       <aside></aside>
 
+      <!--
+      Pour des commentaires relatifs à l'article, inclure un article (1 commentaire = 1 article)
+      -->
       <article></article>
     </article>
 
+    <!-- En dehors de la balise article, aside correspond au contenu en relation (complémentaire) avec le site
+      - Réseaux sociaux, Shop, Podcast
+    -->
     <aside id="sidebar">
-      <section>
-        <header></header>
+      <!-- Section permettra de regrouper les contenus de même type -->
+      <section id="social">
+        <header>Réseaux sociaux</header>
       </section>
     </aside>
   </div><!-- / #main -->
